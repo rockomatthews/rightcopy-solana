@@ -1,4 +1,4 @@
-@import "~antd/lib/style/themes/default.less";
+@import '~antd/lib/style/themes/default.less';
 
 * {
   font-family: 'GraphikWeb';
@@ -6,7 +6,7 @@
 
 .ant-layout-content {
   overflow: auto !important;
-  @media (max-width: @mobile-xs-max){
+  @media (max-width: @mobile-xs-max) {
     padding: 0 !important;
   }
 }
@@ -16,25 +16,29 @@
 
 .action-btn:disabled {
   color: rgba(255, 255, 255, 0.5);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: rgba(255, 255, 255, 0.5);
   }
 }
 
-.ant-upload-list-item-info .anticon-loading .anticon, .ant-upload-list-item-info .ant-upload-text-icon .anticon {
+.ant-upload-list-item-info .anticon-loading .anticon,
+.ant-upload-list-item-info .ant-upload-text-icon .anticon {
   color: white;
 }
 
 .ant-upload-list-item:hover {
-  .ant-upload-list-item-info .anticon-loading .anticon, .ant-upload-list-item-info .ant-upload-text-icon .anticon,
+  .ant-upload-list-item-info .anticon-loading .anticon,
+  .ant-upload-list-item-info .ant-upload-text-icon .anticon,
   .ant-upload-list-item-name {
     color: @black-100 !important;
   }
 }
 
 .url-form-action {
-  color: #FFFFFF !important;
-  &.ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+  color: #ffffff !important;
+  &.ant-form-item-has-error
+    :not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
     color: red;
   }
   h3 {
@@ -75,7 +79,7 @@
   }
 
   p {
-    color: #6d6d6d;
+    color: #fff;
     font-style: normal;
     font-size: 20px;
   }
@@ -85,7 +89,7 @@
   .ant-select {
     color: @black-100;
   }
-  .anticon.ant-input-clear-icon{
+  .anticon.ant-input-clear-icon {
     color: white;
   }
   .ant-input-group-addon .ant-select {
@@ -128,7 +132,6 @@
 .type-btn {
   height: 80px;
   width: 450px;
-  border-radius: 8px;
   background-color: #1d1d1d;
   border-width: 0;
   margin-bottom: 20px;
@@ -140,20 +143,21 @@
   align-items: center;
   padding: 20px 24px;
 
-  background: linear-gradient(270deg, #616774 7.29%, #403f4c 100%);
+  background: #000;
   max-width: 100%;
   white-space: normal;
 }
 
 .type-btn:hover {
-  background: linear-gradient(270deg, #616774 7.29%, #403f4c 100%) !important;
+  background: #fff !important;
+  color: #000;
 }
 .type-btn:disabled {
   pointer-events: none;
 }
 
 .type-btn-description {
-  color: #aaa;
+  color: #fff;
   font-size: 0.7rem;
 }
 
@@ -168,8 +172,7 @@
   padding: 20px 10px;
 
   /* button/primary/default */
-  background: linear-gradient(180deg, #768bf9 0%, #5870ee 100%);
-  border-radius: 8px;
+  background: #000;
   height: 58px;
 
   /* caps button text */
@@ -193,15 +196,16 @@
   box-shadow: 0 0 24px rgba(26, 26, 26, 0.12);
   border-radius: 8px;
   padding: 12px 20px;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-style: normal;
   font-weight: 600;
   height: fit-content;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background: transparent;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
+    border-color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -251,7 +255,6 @@ h2 {
     order: 0;
     flex-grow: 0;
   }
-
 }
 
 .action-field {
@@ -317,7 +320,6 @@ h2 {
   margin: 12px 0;
 }
 
-
 .waiting-title {
   font-weight: 600;
   font-size: 2rem;
@@ -352,8 +354,8 @@ h2 {
   /* identical to box height, or 100% */
   letter-spacing: -0.01em;
   /* White */
-  color: #FFFFFF;
-  &.w100{
+  color: #ffffff;
+  &.w100 {
     width: 100%;
   }
 }
