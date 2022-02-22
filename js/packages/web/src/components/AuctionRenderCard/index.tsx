@@ -27,7 +27,7 @@ export const AuctionRenderCard = (props: AuctionCard) => {
     <Card hoverable={true} className={`auction-render-card`} bordered={false}>
       <div className={'card-art-info'}>
         <div className="auction-gray-wrapper">
-          <div className={'card-artist-info'}>
+          {/* <div className={'card-artist-info'}>
             <MetaAvatar creators={creators.length ? [creators[0]] : undefined} />
             <span className={'artist-name'}>
               {creators[0]?.name ||
@@ -35,7 +35,7 @@ export const AuctionRenderCard = (props: AuctionCard) => {
                 'Go to auction'}
               ...
             </span>
-          </div>
+          </div> */}
           <div className={'art-content-wrapper'}>
             <ArtContent
               className="auction-image no-events"
@@ -44,14 +44,14 @@ export const AuctionRenderCard = (props: AuctionCard) => {
               allowMeshRender={false}
             />
           </div>
-          <div className={'art-name'}>{name}</div>
-          <div className="auction-info-container">
+          {/* <div className={'art-name'}>{name}</div> */}
+          {/* <div className="auction-info-container">
             <div className={'info-message'}>ENDING IN</div>
             <AuctionCountdown auctionView={auctionView} labels={false} />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="card-bid-info">
+      {/* <div className="card-bid-info">
         <span className={'text-uppercase info-message'}>{status}</span>
         <AmountLabel
           containerStyle={{ flexDirection: 'row' }}
@@ -60,7 +60,7 @@ export const AuctionRenderCard = (props: AuctionCard) => {
           iconSize={24}
           tokenInfo={tokenInfo}
         />
-      </div>
+      </div> */}
     </Card>
   );
 
